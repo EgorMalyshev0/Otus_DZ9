@@ -12,15 +12,15 @@ struct DetailScreen: View {
     let album: Album
 
     var body: some View {
-        VStack {
+        VStack(spacing: 10) {
             Text(album.collectionName)
                 .font(.title3)
                 .foregroundColor(.primary)
-                .lineLimit(1)
+                .multilineTextAlignment(.center)
             Text(album.artistName)
                 .font(.title3)
-                .foregroundColor(.primary)
-                .lineLimit(1)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
         }
         .padding(.horizontal, 16)
     }

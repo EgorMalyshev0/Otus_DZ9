@@ -21,6 +21,20 @@
 		DE8E9C80278A225700BE9A10 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C76278A225700BE9A10 /* Router.swift */; };
 		DE8E9C81278A225700BE9A10 /* AlbumsScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C77278A225700BE9A10 /* AlbumsScreenCell.swift */; };
 		DE8E9C83278A2B5D00BE9A10 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C82278A2B5D00BE9A10 /* DetailScreen.swift */; };
+		DE8E9CF6278A300900BE9A10 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8E9CF5278A300900BE9A10 /* Preview Assets.xcassets */; };
+		DE8E9CFA278A303000BE9A10 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C6E278A225700BE9A10 /* Album.swift */; };
+		DE8E9CFB278A303300BE9A10 /* AlbumsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C6F278A225700BE9A10 /* AlbumsScreen.swift */; };
+		DE8E9CFC278A303600BE9A10 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C82278A2B5D00BE9A10 /* DetailScreen.swift */; };
+		DE8E9CFD278A303900BE9A10 /* AlbumsScreenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C77278A225700BE9A10 /* AlbumsScreenCell.swift */; };
+		DE8E9CFE278A303E00BE9A10 /* AlbumsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C6D278A225700BE9A10 /* AlbumsViewModel.swift */; };
+		DE8E9CFF278A304100BE9A10 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C76278A225700BE9A10 /* Router.swift */; };
+		DE8E9D00278A308800BE9A10 /* DZ_9App.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C4F278A20B400BE9A10 /* DZ_9App.swift */; };
+		DE8E9D01278A308B00BE9A10 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C50278A20B400BE9A10 /* ContentView.swift */; };
+		DE8E9D02278A309300BE9A10 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C74278A225700BE9A10 /* NetworkService.swift */; };
+		DE8E9D03278A309300BE9A10 /* AlbumsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C75278A225700BE9A10 /* AlbumsApi.swift */; };
+		DE8E9D04278A309300BE9A10 /* AlbumsNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C72278A225700BE9A10 /* AlbumsNetworkRouter.swift */; };
+		DE8E9D05278A309300BE9A10 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C73278A225700BE9A10 /* ApiRouter.swift */; };
+		DE8E9D06278A309300BE9A10 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C71278A225700BE9A10 /* URLRequestBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,10 +53,19 @@
 		DE8E9C76278A225700BE9A10 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		DE8E9C77278A225700BE9A10 /* AlbumsScreenCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsScreenCell.swift; sourceTree = "<group>"; };
 		DE8E9C82278A2B5D00BE9A10 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№9 (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8E9CF5278A300900BE9A10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DE8E9C53278A20B500BE9A10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8E9CE9278A300800BE9A10 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				DE8E9C4E278A20B400BE9A10 /* Shared */,
+				DE8E9CED278A300800BE9A10 /* DZ№9 */,
 				DE8E9C57278A20B500BE9A10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				DE8E9C56278A20B500BE9A10 /* DZ№9.app */,
+				DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +120,22 @@
 				DE8E9C75278A225700BE9A10 /* AlbumsApi.swift */,
 			);
 			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		DE8E9CED278A300800BE9A10 /* DZ№9 */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E9CF4278A300900BE9A10 /* Preview Content */,
+			);
+			path = "DZ№9";
+			sourceTree = "<group>";
+		};
+		DE8E9CF4278A300900BE9A10 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E9CF5278A300900BE9A10 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,6 +158,23 @@
 			productReference = DE8E9C56278A20B500BE9A10 /* DZ№9.app */;
 			productType = "com.apple.product-type.application";
 		};
+		DE8E9CEB278A300800BE9A10 /* DZ№9 (tvOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE8E9CF9278A300900BE9A10 /* Build configuration list for PBXNativeTarget "DZ№9 (tvOS)" */;
+			buildPhases = (
+				DE8E9CE8278A300800BE9A10 /* Sources */,
+				DE8E9CE9278A300800BE9A10 /* Frameworks */,
+				DE8E9CEA278A300800BE9A10 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DZ№9 (tvOS)";
+			productName = "DZ№9";
+			productReference = DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -128,6 +186,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					DE8E9C55278A20B500BE9A10 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					DE8E9CEB278A300800BE9A10 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -146,6 +207,7 @@
 			projectRoot = "";
 			targets = (
 				DE8E9C55278A20B500BE9A10 /* DZ№9 (iOS) */,
+				DE8E9CEB278A300800BE9A10 /* DZ№9 (tvOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -156,6 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE8E9C63278A20B500BE9A10 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8E9CEA278A300800BE9A10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8E9CF6278A300900BE9A10 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +249,26 @@
 				DE8E9C7D278A225700BE9A10 /* ApiRouter.swift in Sources */,
 				DE8E9C7B278A225700BE9A10 /* URLRequestBuilder.swift in Sources */,
 				DE8E9C7C278A225700BE9A10 /* AlbumsNetworkRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE8E9CE8278A300800BE9A10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE8E9D02278A309300BE9A10 /* NetworkService.swift in Sources */,
+				DE8E9CFF278A304100BE9A10 /* Router.swift in Sources */,
+				DE8E9CFC278A303600BE9A10 /* DetailScreen.swift in Sources */,
+				DE8E9D03278A309300BE9A10 /* AlbumsApi.swift in Sources */,
+				DE8E9D04278A309300BE9A10 /* AlbumsNetworkRouter.swift in Sources */,
+				DE8E9CFB278A303300BE9A10 /* AlbumsScreen.swift in Sources */,
+				DE8E9CFE278A303E00BE9A10 /* AlbumsViewModel.swift in Sources */,
+				DE8E9D01278A308B00BE9A10 /* ContentView.swift in Sources */,
+				DE8E9CFA278A303000BE9A10 /* Album.swift in Sources */,
+				DE8E9D06278A309300BE9A10 /* URLRequestBuilder.swift in Sources */,
+				DE8E9D00278A308800BE9A10 /* DZ_9App.swift in Sources */,
+				DE8E9CFD278A303900BE9A10 /* AlbumsScreenCell.swift in Sources */,
+				DE8E9D05278A309300BE9A10 /* ApiRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +449,61 @@
 			};
 			name = Release;
 		};
+		DE8E9CF7278A300900BE9A10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DZ№9/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UN4892VFR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egm.DZ-9";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+			};
+			name = Debug;
+		};
+		DE8E9CF8278A300900BE9A10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DZ№9/Preview Content\"";
+				DEVELOPMENT_TEAM = 6UN4892VFR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egm.DZ-9";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -376,6 +521,15 @@
 			buildConfigurations = (
 				DE8E9C68278A20B500BE9A10 /* Debug */,
 				DE8E9C69278A20B500BE9A10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE8E9CF9278A300900BE9A10 /* Build configuration list for PBXNativeTarget "DZ№9 (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE8E9CF7278A300900BE9A10 /* Debug */,
+				DE8E9CF8278A300900BE9A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
