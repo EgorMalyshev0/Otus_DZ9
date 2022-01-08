@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var router: Router
+    @EnvironmentObject var viewModel: AlbumsViewModel
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        AlbumsScreen()
+            .environmentObject(viewModel)
     }
 }

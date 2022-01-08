@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct DZ_9App: App {
+    
+    @ObservedObject var router: Router = .init()
+    @ObservedObject var viewModel: AlbumsViewModel = .init()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(router)
+                .environmentObject(viewModel)
         }
     }
 }
