@@ -55,6 +55,12 @@
 		DE8E9E17278B65B600BE9A10 /* AlbumsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C75278A225700BE9A10 /* AlbumsApi.swift */; };
 		DE8E9E18278B65B600BE9A10 /* AlbumsNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C72278A225700BE9A10 /* AlbumsNetworkRouter.swift */; };
 		DE8E9E19278B65B600BE9A10 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C73278A225700BE9A10 /* ApiRouter.swift */; };
+		DE8E9E1C278B675400BE9A10 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE8E9E1B278B675400BE9A10 /* SDWebImageSwiftUI */; };
+		DE8E9E1F278B677A00BE9A10 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE8E9E1E278B677A00BE9A10 /* SDWebImageSwiftUI */; };
+		DE8E9E21278B678B00BE9A10 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = DE8E9E20278B678B00BE9A10 /* SDWebImageSwiftUI */; };
+		DE8E9E23278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
+		DE8E9E24278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
+		DE8E9E25278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,7 @@
 		DE8E9DFE278B657C00BE9A10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE8E9E00278B657C00BE9A10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8E9E01278B657C00BE9A10 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Year.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8E9E1C278B675400BE9A10 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8E9E1F278B677A00BE9A10 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE8E9E21278B678B00BE9A10 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +172,7 @@
 				DE8E9DE5278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App */,
 				DE8E9DF0278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension */,
 				DE8E9C57278A20B500BE9A10 /* Products */,
+				DE8E9E1D278B677A00BE9A10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +187,7 @@
 				DE8E9C76278A225700BE9A10 /* Router.swift */,
 				DE8E9C4F278A20B400BE9A10 /* DZ_9App.swift */,
 				DE8E9C50278A20B400BE9A10 /* ContentView.swift */,
+				DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */,
 				DE8E9C70278A225700BE9A10 /* NetworkService */,
 				DE8E9C51278A20B500BE9A10 /* Assets.xcassets */,
 			);
@@ -251,6 +263,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DE8E9E1D278B677A00BE9A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,6 +286,9 @@
 			dependencies = (
 			);
 			name = "DZ№9 (iOS)";
+			packageProductDependencies = (
+				DE8E9E1B278B675400BE9A10 /* SDWebImageSwiftUI */,
+			);
 			productName = "DZ№9 (iOS)";
 			productReference = DE8E9C56278A20B500BE9A10 /* DZ№9.app */;
 			productType = "com.apple.product-type.application";
@@ -284,6 +306,9 @@
 			dependencies = (
 			);
 			name = "DZ№9 (tvOS)";
+			packageProductDependencies = (
+				DE8E9E1E278B677A00BE9A10 /* SDWebImageSwiftUI */,
+			);
 			productName = "DZ№9";
 			productReference = DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */;
 			productType = "com.apple.product-type.application";
@@ -335,6 +360,9 @@
 			dependencies = (
 			);
 			name = "DZ№9 (watchOS) WatchKit Extension";
+			packageProductDependencies = (
+				DE8E9E20278B678B00BE9A10 /* SDWebImageSwiftUI */,
+			);
 			productName = "DZ№9 (watchOS) WatchKit Extension";
 			productReference = DE8E9DEC278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -375,6 +403,9 @@
 				Base,
 			);
 			mainGroup = DE8E9C49278A20B400BE9A10;
+			packageReferences = (
+				DE8E9E1A278B675400BE9A10 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = DE8E9C57278A20B500BE9A10 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -441,6 +472,7 @@
 				DE8E9C5F278A20B500BE9A10 /* DZ_9App.swift in Sources */,
 				DE8E9C78278A225700BE9A10 /* AlbumsViewModel.swift in Sources */,
 				DE8E9C81278A225700BE9A10 /* AlbumsScreenCell.swift in Sources */,
+				DE8E9E23278B7C9C00BE9A10 /* Date+Year.swift in Sources */,
 				DE8E9C79278A225700BE9A10 /* Album.swift in Sources */,
 				DE8E9C7E278A225700BE9A10 /* NetworkService.swift in Sources */,
 				DE8E9C83278A2B5D00BE9A10 /* DetailScreen.swift in Sources */,
@@ -461,6 +493,7 @@
 				DE8E9D03278A309300BE9A10 /* AlbumsApi.swift in Sources */,
 				DE8E9D04278A309300BE9A10 /* AlbumsNetworkRouter.swift in Sources */,
 				DE8E9CFB278A303300BE9A10 /* AlbumsScreen.swift in Sources */,
+				DE8E9E24278B7C9C00BE9A10 /* Date+Year.swift in Sources */,
 				DE8E9CFE278A303E00BE9A10 /* AlbumsViewModel.swift in Sources */,
 				DE8E9D01278A308B00BE9A10 /* ContentView.swift in Sources */,
 				DE8E9CFA278A303000BE9A10 /* Album.swift in Sources */,
@@ -480,6 +513,7 @@
 				DE8E9E0D278B65B100BE9A10 /* AlbumsScreenCell.swift in Sources */,
 				DE8E9DFA278B657B00BE9A10 /* ComplicationController.swift in Sources */,
 				DE8E9E18278B65B600BE9A10 /* AlbumsNetworkRouter.swift in Sources */,
+				DE8E9E25278B7C9C00BE9A10 /* Date+Year.swift in Sources */,
 				DE8E9E19278B65B600BE9A10 /* ApiRouter.swift in Sources */,
 				DE8E9E13278B65B100BE9A10 /* AlbumsViewModel.swift in Sources */,
 				DE8E9E15278B65B600BE9A10 /* URLRequestBuilder.swift in Sources */,
@@ -942,6 +976,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE8E9E1A278B675400BE9A10 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE8E9E1B278B675400BE9A10 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE8E9E1A278B675400BE9A10 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		DE8E9E1E278B677A00BE9A10 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE8E9E1A278B675400BE9A10 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		DE8E9E20278B678B00BE9A10 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE8E9E1A278B675400BE9A10 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE8E9C4A278A20B400BE9A10 /* Project object */;
 }

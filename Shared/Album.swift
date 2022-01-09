@@ -10,6 +10,7 @@ import Foundation
 struct Album: Codable, Hashable {    
     let artistName, collectionName: String
     let artworkUrl100: String?
+    let releaseDate: String?
 }
 
 struct AlbumListResponse: Codable {
