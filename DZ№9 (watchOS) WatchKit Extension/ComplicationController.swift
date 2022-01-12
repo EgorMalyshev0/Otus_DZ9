@@ -14,7 +14,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
         let descriptors = [
-            CLKComplicationDescriptor(identifier: "complication", displayName: "DZ№9", supportedFamilies: CLKComplicationFamily.allCases)
+            CLKComplicationDescriptor(identifier: "complication", displayName: "DZ№9", supportedFamilies: [.circularSmall, .graphicBezel, .graphicCircular, .utilitarianSmall, .graphicCorner])
             // Multiple complication support can be added here with more descriptors
         ]
         
@@ -41,8 +41,37 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Population
     
     func getCurrentTimelineEntry(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
-        // Call the handler with the current timeline entry
-        handler(nil)
+        let entry: CLKComplicationTimelineEntry
+        switch complication.family {
+        case .circularSmall:
+            let image = CLKImageProvider(onePieceImage: UIImage(named: "logo54")!)
+            let template = CLKComplicationTemplateCircularSmallRingImage(imageProvider: image, fillFraction: 1.0, ringStyle: CLKComplicationRingStyle.closed)
+            entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler (entry)
+        case .graphicCircular:
+            let image = CLKFullColorImageProvider(fullColorImage: UIImage(named: "logo54")!)
+            let template = CLKComplicationTemplateGraphicCircularImage(imageProvider: image)
+            entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler (entry)
+        case .utilitarianSmall:
+            let image = CLKImageProvider(onePieceImage: UIImage(named: "logo54")!)
+            let template = CLKComplicationTemplateUtilitarianSmallRingImage(imageProvider: image, fillFraction: 1.0, ringStyle: CLKComplicationRingStyle.closed)
+            entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler (entry)
+        case .graphicCorner:
+            let image = CLKFullColorImageProvider(fullColorImage: UIImage(named: "logo54")!)
+            let template = CLKComplicationTemplateGraphicCornerCircularImage(imageProvider: image)
+            entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler (entry)
+        case.graphicBezel:
+            let image = CLKFullColorImageProvider(fullColorImage: UIImage(named: "logo54")!)
+            let circulartemplate = CLKComplicationTemplateGraphicCircularImage(imageProvider: image)
+            let text = CLKSimpleTextProvider(text: "Albums")
+            let template = CLKComplicationTemplateGraphicBezelCircularText(circularTemplate: circulartemplate, textProvider: text)
+            entry = CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template)
+            handler (entry)
+        default:
+            handler(nil)
     }
     
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int, withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
@@ -52,8 +81,19 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
 
     // MARK: - Sample Templates
     
-    func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
-        // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
+            switch complication.family {
+            case .circularSmall:
+                let image = CLKImageProvider(onePieceImage: UIImage(systemName: "y.circle")!)
+                let template = CLKComplicationTemplateCircularSmallRingImage(imageProvider: image, fillFraction: 1.0, ringStyle: CLKComplicationRingStyle.closed)
+                handler (template)
+            case .graphicCircular:
+                let image = CLKFullColorImageProvider(fullColorImage: UIImage(named: "logo54")!)
+                let template = CLKComplicationTemplateGraphicCircularImage(imageProvider: image)
+                handler(template)
+            default:
+                handler (nil)
+            }
+        }
     }
 }

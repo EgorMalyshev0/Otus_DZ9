@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct NotificationView: View {
+    
+    let title: String
+    let message: String
+    
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-
-struct NotificationView_Previews: PreviewProvider {
-    static var previews: some View {
-        NotificationView()
+        VStack {
+            Text(title)
+            Text(message)
+        }
     }
 }

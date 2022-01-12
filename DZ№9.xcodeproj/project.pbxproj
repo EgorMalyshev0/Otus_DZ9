@@ -35,7 +35,7 @@
 		DE8E9D04278A309300BE9A10 /* AlbumsNetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C72278A225700BE9A10 /* AlbumsNetworkRouter.swift */; };
 		DE8E9D05278A309300BE9A10 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C73278A225700BE9A10 /* ApiRouter.swift */; };
 		DE8E9D06278A309300BE9A10 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9C71278A225700BE9A10 /* URLRequestBuilder.swift */; };
-		DE8E9DE2278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DE8E9DE2278B657900BE9A10 /* DZ№9 (watchOS).app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS).app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE8E9DE7278B657B00BE9A10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8E9DE6278B657B00BE9A10 /* Assets.xcassets */; };
 		DE8E9DED278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DE8E9DEC278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		DE8E9DF6278B657B00BE9A10 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9DF5278B657B00BE9A10 /* NotificationController.swift */; };
@@ -61,6 +61,7 @@
 		DE8E9E23278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
 		DE8E9E24278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
 		DE8E9E25278B7C9C00BE9A10 /* Date+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */; };
+		DEC228BC278F5A0A001D9D3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8E9C51278A20B500BE9A10 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +88,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				DE8E9DE2278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app in Embed Watch Content */,
+				DE8E9DE2278B657900BE9A10 /* DZ№9 (watchOS).app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +125,7 @@
 		DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№9 (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8E9CF5278A300900BE9A10 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE8E9DDE278B657900BE9A10 /* DZ№9 (watchOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№9 (watchOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№9 (watchOS) WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DZ№9 (watchOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8E9DE6278B657B00BE9A10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE8E9DEC278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DZ№9 (watchOS) WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8E9DF5278B657B00BE9A10 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -179,15 +180,11 @@
 		DE8E9C4E278A20B400BE9A10 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DE8E9C6E278A225700BE9A10 /* Album.swift */,
-				DE8E9C6F278A225700BE9A10 /* AlbumsScreen.swift */,
-				DE8E9C82278A2B5D00BE9A10 /* DetailScreen.swift */,
-				DE8E9C77278A225700BE9A10 /* AlbumsScreenCell.swift */,
-				DE8E9C6D278A225700BE9A10 /* AlbumsViewModel.swift */,
-				DE8E9C76278A225700BE9A10 /* Router.swift */,
 				DE8E9C4F278A20B400BE9A10 /* DZ_9App.swift */,
 				DE8E9C50278A20B400BE9A10 /* ContentView.swift */,
-				DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */,
+				DEC228BF278F67B1001D9D3F /* Models */,
+				DEC228C0278F67BA001D9D3F /* UI */,
+				DEC228C1278F67C9001D9D3F /* Extensions */,
 				DE8E9C70278A225700BE9A10 /* NetworkService */,
 				DE8E9C51278A20B500BE9A10 /* Assets.xcassets */,
 			);
@@ -200,7 +197,7 @@
 				DE8E9C56278A20B500BE9A10 /* DZ№9.app */,
 				DE8E9CEC278A300800BE9A10 /* DZ№9 (tvOS).app */,
 				DE8E9DDE278B657900BE9A10 /* DZ№9 (watchOS).app */,
-				DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app */,
+				DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS).app */,
 				DE8E9DEC278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -268,6 +265,34 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEC228BF278F67B1001D9D3F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E9C6E278A225700BE9A10 /* Album.swift */,
+				DE8E9C6D278A225700BE9A10 /* AlbumsViewModel.swift */,
+				DE8E9C76278A225700BE9A10 /* Router.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEC228C0278F67BA001D9D3F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E9C6F278A225700BE9A10 /* AlbumsScreen.swift */,
+				DE8E9C82278A2B5D00BE9A10 /* DetailScreen.swift */,
+				DE8E9C77278A225700BE9A10 /* AlbumsScreenCell.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DEC228C1278F67C9001D9D3F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE8E9E22278B7C9C00BE9A10 /* Date+Year.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +369,7 @@
 			);
 			name = "DZ№9 (watchOS) WatchKit App";
 			productName = "DZ№9 (watchOS) WatchKit App";
-			productReference = DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS) WatchKit App.app */;
+			productReference = DE8E9DE1278B657900BE9A10 /* DZ№9 (watchOS).app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		DE8E9DEB278B657B00BE9A10 /* DZ№9 (watchOS) WatchKit Extension */ = {
@@ -455,6 +480,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEC228BC278F5A0A001D9D3F /* Assets.xcassets in Resources */,
 				DE8E9DFF278B657C00BE9A10 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -813,11 +839,10 @@
 				DEVELOPMENT_TEAM = 6UN4892VFR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = DZ_9__watchOS__WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "DZ№9 (watchOS) WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egm.DZ-9--watchOS-.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DZ№9 (watchOS)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -838,11 +863,10 @@
 				DEVELOPMENT_TEAM = 6UN4892VFR;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = DZ_9__watchOS__WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "DZ№9 (watchOS) WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egm.DZ-9--watchOS-.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "DZ№9 (watchOS)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
